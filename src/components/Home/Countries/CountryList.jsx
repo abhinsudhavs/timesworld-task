@@ -48,22 +48,22 @@ const CountryList = () => {
                             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 
                                 <Grid item xs={12} md={6}>
-                                    <Skeleton width="100%" height="100px" variant='rectangular' />
+                                    <Skeleton width="100%" height="100px" animation="wave" variant='rectangular' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
-                                    <Skeleton width="100%" height="100px" variant='rectangular' />
+                                    <Skeleton width="100%" height="100px" animation="wave" variant='rectangular' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
-                                    <Skeleton width="100%" height="100px" variant='rectangular' />
+                                    <Skeleton width="100%" height="100px" animation="wave" variant='rectangular' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
-                                    <Skeleton width="100%" height="100px" variant='rectangular' />
+                                    <Skeleton width="100%" height="100px" animation="wave" variant='rectangular' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
-                                    <Skeleton width="100%" height="100px" variant='rectangular' />
+                                    <Skeleton width="100%" height="100px" animation="wave" variant='rectangular' />
                                 </Grid>
                                 <Grid item xs={12} md={6}>
-                                    <Skeleton width="100%" height="100px" variant='rectangular' />
+                                    <Skeleton width="100%" height="100px" animation="wave" variant='rectangular' />
                                 </Grid>
                             </Grid>
                         </>
