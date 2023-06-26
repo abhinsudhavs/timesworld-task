@@ -14,14 +14,14 @@ const CountryList = () => {
 
 
     const country = <>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 3 }}>
             {countries.map((item, index) => (
                 <Grid item xs={12} md={6} key={index}>
                     <Stack sx={{
                         flexBasis: { xs: '100%', md: '40%' },
                         border: "solid 2px #3E3E3E",
                         padding: '20px',
-                        margin: '20px',
+                        margin: '10px',
                         boxShadow: "8px 8px 0px 0px rgba(0, 0, 0, 0.10)",
                     }}>
                         <Stack direction={{ xs: "row", column: "row" }} alignItems="center" spacing={2}>
