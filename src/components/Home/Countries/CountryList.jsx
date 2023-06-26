@@ -7,40 +7,10 @@ const CountryList = () => {
     const dispatch = useDispatch();
     const countries = useSelector((state) => state.COUTRIES.countries)
     const loading = useSelector((state) => state.COUTRIES.loading)
-    console.log("countries", countries)
+
     useEffect(() => {
         dispatch(loadCountries())
     }, [])
-
-    // const countryListBind =
-
-    //     <>
-    //         <Stack direction={{ xs: "column", md: "row" }} sx={{
-    //             flexWrap: 'wrap',
-    //         }} spacing={{ xs: 0, md: 2 }}>
-    //             {countries.map((item) => (
-    //                 <Stack sx={{
-    //                     flexBasis: { xs: '100%', md: '40%' },
-    //                     border: "solid 1px #3E3E3E",
-    //                     padding: '20px',
-    //                     margin: '20px'
-    //                 }}>
-    //                     <Stack direction={{ xs: "row", column: "row" }} alignItems="center" spacing={2}>
-    //                         <Box component='img' src={item.flag} sx={{ width: '127px', height: '96px', objectFit: 'cover' }} />
-    //                         <Stack>
-    //                             <Typography variant='body1' sx={{ fontSize: '24px', color: '#3D3D3D', fontWeight: '600' }}>{item.name}</Typography>
-    //                             <Typography variant='body1' sx={{ fontSize: '16px', color: "#6F6F6F" }}>{item.region}</Typography>
-    //                         </Stack>
-    //                     </Stack>
-
-
-
-    //                 </Stack>
-    //             ))}
-
-    //         </Stack>
-
-    //     </>
 
 
     const country = <>

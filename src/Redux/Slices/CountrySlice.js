@@ -12,7 +12,6 @@ const loadCountries = createAsyncThunk("api/loadCountries", async () => {
   return await axios
     .get("https://restcountries.com/v2/all?fields=name,region,flag")
     .then((response) => {
-      console.log(response);
       return response.data;
     });
 });

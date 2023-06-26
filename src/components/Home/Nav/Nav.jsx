@@ -81,7 +81,7 @@ const Nav = () => {
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                            Countries
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
                             <IconButton
