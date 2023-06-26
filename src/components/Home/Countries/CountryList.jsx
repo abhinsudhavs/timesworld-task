@@ -21,13 +21,14 @@ const CountryList = () => {
                         flexBasis: { xs: '100%', md: '40%' },
                         border: "solid 2px #3E3E3E",
                         padding: '20px',
-                        margin: '20px'
+                        margin: '20px',
+                        boxShadow: "8px 8px 0px 0px rgba(0, 0, 0, 0.10)",
                     }}>
                         <Stack direction={{ xs: "row", column: "row" }} alignItems="center" spacing={2}>
-                            <Box component='img' src={item.flag} sx={{ width: '127px', height: '96px', objectFit: 'cover' }} />
+                            <Box component='img' src={item.flag} sx={{ width: { xs: "48px", md: '127px' }, height: { xs: "46px", md: '96px' }, objectFit: 'cover' }} />
                             <Stack>
-                                <Typography variant='body1' sx={{ fontSize: '24px', color: '#3D3D3D', fontWeight: '600' }}>{item.name}</Typography>
-                                <Typography variant='body1' sx={{ fontSize: '16px', color: "#6F6F6F" }}>{item.region}</Typography>
+                                <Typography variant='body1' sx={{ fontSize: { xs: "16px", md: '24px' }, color: '#3D3D3D', fontWeight: '600' }}>{item.name}</Typography>
+                                <Typography variant='body1' sx={{ fontSize: { xs: "12px", md: '16px' }, color: "#6F6F6F" }}>{item.region}</Typography>
                             </Stack>
                         </Stack>
 
